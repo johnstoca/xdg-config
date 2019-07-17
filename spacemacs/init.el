@@ -126,7 +126,7 @@
           (setq-local flycheck-javascript-eslint-executable eslint)))))
   (add-hook 'flycheck-mode-hook #'my/use-eslint-from-node-modules)
 
-  (add-to-list 'auto-mode-alist '("\\.js\\'" . react-mode))
+  (add-to-list 'auto-mode-alist '("\\.js\\'" . rjsx-mode))
 
   (setq-default web-mode-markup-indent-offset 2)
   (setq-default web-mode-css-indent-offset 2)
