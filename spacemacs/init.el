@@ -145,6 +145,8 @@
     (add-to-list 'web-mode-indentation-params '("lineup-args" . nil))
     (add-to-list 'web-mode-indentation-params '("lineup-concats" . nil))
     (add-to-list 'web-mode-indentation-params '("lineup-calls" . nil)))
+
+  (setq-default js-indent-level 2)
   )
 
 (custom-set-variables
