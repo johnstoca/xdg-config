@@ -38,7 +38,7 @@
   (setq-default
    dotspacemacs-elpa-https t
    dotspacemacs-elpa-timeout 5
-   dotspacemacs-check-for-update nil
+   dotspacemacs-check-for-update t
    dotspacemacs-elpa-subdirectory nil
    dotspacemacs-editing-style 'vim
    dotspacemacs-verbose-loading nil
