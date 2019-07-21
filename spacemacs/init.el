@@ -133,20 +133,18 @@
   (setq-default web-mode-code-indent-offset 2)
   (setq-default web-mode-attr-indent-offset 2)
 
-  (defun my/js2-mode-hook ()
+  (with-eval-after-load 'rjsx-mode
     (setq-default js2-basic-offset 2)
     (setq-default js-indent-level 2)
     (setq-default js2-mode-show-parse-errors nil)
     (setq-default js2-mode-show-strict-warnings nil)
     )
-  (add-hook 'js2-mode-hook 'my/js2-mode-hook)
+  (add-hook 'rjsx-mode-hook 'prettier-js-mode)
 
   (with-eval-after-load 'web-mode
     (add-to-list 'web-mode-indentation-params '("lineup-args" . nil))
     (add-to-list 'web-mode-indentation-params '("lineup-concats" . nil))
     (add-to-list 'web-mode-indentation-params '("lineup-calls" . nil)))
-
-  (setq-default js-indent-level 2)
   )
 
 (custom-set-variables
