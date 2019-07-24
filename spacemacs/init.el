@@ -13,7 +13,6 @@
      ruby
      html
      javascript
-     prettier
      react
      yaml
      python
@@ -29,6 +28,7 @@
      )
    dotspacemacs-additional-packages '(
                                       yasnippet-snippets
+                                      prettier-js
                                       )
    dotspacemacs-frozen-packages '()
    dotspacemacs-excluded-packages '()
